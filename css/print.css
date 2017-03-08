@@ -1,0 +1,12 @@
+@media print {
+    header nav,
+    .footer {
+        display: none;
+    }
+    img {
+        max-width: 500px;
+    }
+    body {
+        border: none;
+    }
+}
