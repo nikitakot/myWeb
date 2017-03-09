@@ -159,8 +159,6 @@ form #name, #email {
 }
 
 form #submit, #reset {
-    /*background-color: rgba(76, 175, 80, 0.39);*/
-    /* Green */
     background-color: white;
     max-width: 25%;
     border-color: rgba(76, 175, 80, 0.39);

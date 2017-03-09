@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/main_flex_layout.css">
     <link rel="stylesheet" href="css/print.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+
     <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -30,11 +33,12 @@
 <header class="header">
     <nav>
         <ul class="menu">
-            <li><a href="./">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="downloads.html">CV</a></li>
-            <li class="current"><a href="contacts.html">Contact</a></li>
+            <li id="mobileMenu"><a href="#">Menu</a></li>
+            <li class="desktopMenu"><a href="./">Home</a></li>
+            <li class="desktopMenu"><a href="about.html">About</a></li>
+            <li class="desktopMenu"><a href="projects.html">Projects</a></li>
+            <li class="desktopMenu"><a href="downloads.html">CV</a></li>
+            <li class="desktopMenu current"><a href="contacts.html">Contact</a></li>
         </ul>
     </nav>
 
