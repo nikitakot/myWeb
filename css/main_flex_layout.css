@@ -11,6 +11,8 @@
     flex: 1;
     -webkit-flex: 1; /* Safari 6.1+ */
     -ms-flex: 1; /* IE 10 */
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
 }
 
 .wrapper h1 {
@@ -38,8 +40,11 @@
     padding-top: 0.25em;
     border-top: 2px solid rgba(159, 159, 159, 0.3);
     border-bottom: 2px solid rgba(159, 159, 159, 0.3);
-    display: flex;
-    display: -webkit-flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-flow: column;
     -webkit-flex-flow: column;
 }
@@ -55,6 +60,8 @@
 .main > * {
     -webkit-flex: 1; /* Safari 6.1+ */
     -ms-flex: 1; /* IE 10 */
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
     flex-basis: 100%;
     -webkit-flex-basis: 100%; /* Safari 6.1+ */
     flex: 1 100%;
@@ -77,5 +84,7 @@
     .main {
         flex-flow: column wrap;
         -webkit-flex-flow: column wrap;
+        flex-direction: column; /*MS Edge*/
+        flex-wrap: wrap; /*MS Edge*/
     }
 }
