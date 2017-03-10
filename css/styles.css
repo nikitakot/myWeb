@@ -44,6 +44,19 @@ body {
     margin: auto;
 }
 
+.downloadIcon{
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.downloadIcon:hover{
+    opacity: 1;
+    width: 33px;
+}
+
 .emptydiv {
 
 }
